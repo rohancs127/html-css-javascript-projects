@@ -105,6 +105,8 @@ body{
 
 .tracking-title, .tracking-notation{
   display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .tracking-title{
@@ -112,7 +114,22 @@ body{
   justify-content: space-between;
 }
 
+.dispatch-circle, .shipped-circle, .OFD-circle{
+  height: 5px;
+  width: 5px;
+  border: solid lightgray 2.5px;
+  border-radius: 50%;
+}
+.dispatch-circle{
+  border-color: blue;
+  background-color: blue;
+}
 
+.line{
+  width: 50px;
+  height: 2px;
+  background-color:lightgray;
+}
 
 .item-price-row, .quantity-row, .shipping-cost-row, .total-row{
   display: flex;
@@ -126,6 +143,10 @@ body{
 .item-details{
   width: 45%;
   padding: 20px ;
+}
+.shipping-details{
+  width: 55%;
+  padding: 20px;
 }
 
 .item-image3-in-cart{
