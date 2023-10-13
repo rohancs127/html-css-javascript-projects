@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="item-container">
+        <div class="item-image-div"><img src="images/image-3.png" class="item-image3" ></div>
+        <h1 class="item-name">AirPods (3rd generation) with Lightning Charging Case</h1>
+        <h2 class="item-price">$169.00</h2>
+        <p class="shipping">Free Shipping</p>
+        <div class="operations">
+            <button class="add-to-cart" onclick="displayCartContainer();">Add To Cart</button>
+            <button class="add-to-favorite"><img class="favorites-icon" src="images/heart.png"></button>
+            <button class="share"><img class="share-icon"><img src="images/share-icon.svg" class="share-icon-image"></button>
+        </div>
+
+    </div>
+    <div class="cart-container">
+        <div class="item-details">
+            <img class="item-image3-in-cart" src="images/image-3.png">
+            <h1 class="item-name-in-cart">AirPods (3rd generation) with Lightning Charging Case</h1>
+        <h2 class="item-price-in-cart">$169.00</h2>
+        <input class="quantity-input" type="number">
+        </div>
+        <div class="shipping-details">
+            <div class="display-tracking">
+                <div class="tracking-title">
+                    <div>Dispatched</div>
+                    <div>Shipped</div>
+                    <div>Out for delivery</div>
+                </div>
+                <div class="tracking-notation">
+                    <div class="dispatch-circle"></div>
+                    <div class="line"></div>
+                    <div class="shipped-circle"></div>
+                    <div class="line"></div>
+                    <div class="OFD-circle"></div>
+                </div>
+            </div>
+
+            <div class="total-price">
+                <div class="item-price-row">
+                    <div>Item price</div>
+                    <div>$169.00</div>
+                </div>
+                <div class="quantity-row">
+                    <div>Quantity</div>
+                    <div>1</div>
+                </div>
+                <div class="shipping-cost-row"> 
+                    <div>Shipping cost</div>
+                    <div>$0</div>
+                </div>
+                <div class="total-row">
+                    <div>Total</div>
+                    <div>$169</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

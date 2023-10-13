@@ -1,0 +1,153 @@
+body{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 161);
+}
+
+.item-container{
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  width: 250px;
+  height: 430px;
+  margin-top: 10%;
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content:center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.item-image3{
+  width: 200px;
+  height: 200px;
+}
+.item-image-div{
+  align-self: center;
+}
+
+
+.operations{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.favorites-icon, .share-icon-image{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.item-name{
+  font-size: 19px;
+  line-height: 28px;
+  color: rgb(80, 80, 80);
+  font-weight: 550;
+}
+
+.item-price{  color: rgb(112, 31, 31);
+  font-weight: 550;
+}
+
+.add-to-favorite, .add-to-cart, .share{
+  background: none;
+}
+
+.add-to-favorite,.share{
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s;
+}
+.favorites-icon:hover, .share-icon-image:hover{
+  opacity: 0.7;
+}
+
+.shipping, .item-name, .item-price{
+  margin: 10px 0px 10px 0px;
+}
+
+.shipping{
+  color: green;
+}
+
+.add-to-cart{
+  border: none;
+  background-color: rgb(255, 174, 0);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-to-cart:hover{
+  background-color: rgb(255, 194, 61);
+}
+
+.cart-container{
+  display: flex;
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  align-items: center;
+}
+
+.tracking-title, .tracking-notation{
+  display: flex;
+}
+
+.tracking-title{
+  font-size: 10px;
+  justify-content: space-between;
+}
+
+
+
+.item-price-row, .quantity-row, .shipping-cost-row, .total-row{
+  display: flex;
+}
+
+.total-price{
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+}
+
+.item-details{
+  width: 45%;
+  padding: 20px ;
+}
+
+.item-image3-in-cart{
+  width: 120px;
+  height: 120px;
+}
+
+.item-name-in-cart, .item-price-in-cart{
+  font-size: 15px;
+}
+.item-price-in-cart{
+  color:rgb(112, 31, 31);
+}
+
+.quantity-input{
+  width: 50px
+}
+.quantity-input:focus{
+  outline: none;
+}
+
+.item-details , .shipping-details{
+  display: flex;
+  flex-direction: column;
+}
