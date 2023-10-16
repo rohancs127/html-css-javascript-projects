@@ -112,6 +112,7 @@ body{
 .tracking-title{
   font-size: 10px;
   justify-content: space-between;
+  width: 250px;
 }
 
 .dispatch-circle, .shipped-circle, .OFD-circle{
@@ -126,7 +127,7 @@ body{
 }
 
 .line{
-  width: 50px;
+  width: 100px;
   height: 2px;
   background-color:lightgray;
 }
@@ -145,8 +146,12 @@ body{
   padding: 20px ;
 }
 .shipping-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 55%;
-  padding: 20px;
+  padding: 120px;
+  height: 100%;
 }
 
 .item-image3-in-cart{
@@ -171,4 +176,12 @@ body{
 .item-details , .shipping-details{
   display: flex;
   flex-direction: column;
+}
+
+.display-tracking{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  height: 50px;
 }
