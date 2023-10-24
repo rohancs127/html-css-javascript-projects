@@ -85,8 +85,8 @@ body{
   border: none;
   background-color: rgb(255, 174, 0);
   border-radius: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -101,6 +101,9 @@ body{
   width: 600px;
   height: 600px;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .tracking-title, .tracking-notation{
@@ -170,10 +173,17 @@ body{
 }
 
 .quantity-input{
-  width: 50px
+  width: 55px;
+  padding: 5px 20px 5px 5px;
+  color: rgb(68, 68, 68);
+  border-color: lightgray;
+  background:none;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 .quantity-input:focus{
   outline: none;
+  border-color: rgb(148, 148, 148);
 }
 
 .item-details , .shipping-details{
