@@ -56,7 +56,7 @@ body{
   font-weight: 550;
 }
 
-.add-to-favorite, .add-to-cart, .share{
+.add-to-favorite, .buy-now, .share{
   background: none;
 }
 
@@ -81,7 +81,7 @@ body{
   color: green;
 }
 
-.add-to-cart{
+.buy-now{
   border: none;
   background-color: rgb(255, 174, 0);
   border-radius: 20px;
@@ -91,19 +91,23 @@ body{
   transition: 0.3s;
 }
 
-.add-to-cart:hover{
+.buy-now:hover{
   background-color: rgb(255, 194, 61);
 }
 
 .cart-container{
   display: flex;
+  position: absolute;
+  right: 0;
   background-color: white;
   width: 600px;
   height: 600px;
   align-items: center;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .tracking-title, .tracking-notation{
@@ -201,4 +205,9 @@ body{
   justify-content: space-between;
   align-items:center;
   height: 50px;
+}
+
+.clicked-buy-now{
+  opacity: 1;
+  position: static;
 }

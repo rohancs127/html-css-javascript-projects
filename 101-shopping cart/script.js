@@ -1,3 +1,5 @@
-function displayCartContainer(){
-    let cartContainerElement = document.querySelector('.cart-conatiner');
-}
+let buyNowButton = document.querySelector('.buy-now');
+
+buyNowButton.addEventListener('click', ()=>{
+    document.querySelector('.cart-container').classList.add('clicked-buy-now')
+})
